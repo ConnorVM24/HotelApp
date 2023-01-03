@@ -213,57 +213,6 @@ class App extends Component {
                 </span>
               </span>
             </div>
-            <div>
-              <select
-                className="mobile-only"
-                name="passFilter"
-                value={this.state.passFilter}
-                onChange={(passFilter) => {
-                  this.setState({ passFilter });
-                }}
-              >
-                <option value="all">Show All</option>
-                <option value="ikon">Ikon Destinations</option>
-                <option value="epic">Epic Destinations</option>
-              </select>
-              <img
-                src="all-passes.png"
-                alt="All Passes"
-                className={`passType ${
-                  this.state.passFilter === "all" && "active"
-                }`}
-                onClick={() => this.setPassType("all")}
-              />
-              <img
-                src="epic.png"
-                alt="Epic Pass"
-                className={`passType ${
-                  this.state.passFilter === "epic" && "active"
-                }`}
-                onClick={() => this.setPassType("epic")}
-              />
-              <img
-                src="ikon.png"
-                alt="Ikon Pass"
-                className={`passType ${
-                  this.state.passFilter === "ikon" && "active"
-                }`}
-                onClick={() => this.setPassType("ikon")}
-              />{" "}
-            </div>
-          </div>
-          <div className="author">
-            <a
-              href="https://scottpdawson.com"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <img
-                src="scottpdawson.jpg"
-                title="Created by @scottpdawson"
-                alt="Scott Dawson"
-              />
-            </a>
           </div>
           <div className="vertSlider">
             <div className="vertSliderMeta">
